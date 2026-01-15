@@ -1,2 +1,8 @@
-# lumi-r-v-rs-e-commerce-website
-Exported from Caffeine project: Lumièrè &amp; Vërsē E commerce Website
+## Lumièrè & Vërsē E commerce Website
+
+To run app build and run docker image:
+
+```
+docker build -t app .
+docker run -it --network host app
+```

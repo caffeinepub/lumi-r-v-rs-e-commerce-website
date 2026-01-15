@@ -1,0 +1,5 @@
+{
+  "frontend/src/pages/AdminPage.tsx": "Admin dashboard for managing products, orders, contact forms, and Stripe configuration with OrderStatus imported as a value (not type-only) for runtime enum usage.",
+  "frontend/src/pages/CheckoutPage.tsx": "Checkout page that processes cart items, creates orders using OrderStatus enum as a runtime value, and redirects to Stripe payment.",
+  "frontend/src/pages/OrderDetailPage.tsx": "Order detail page displaying order items and delivery tracking information without external map library dependencies."
+}
