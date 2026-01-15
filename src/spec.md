@@ -21,28 +21,29 @@ A luxury e-commerce website for the brand Lumièrè & Vërsē featuring a comple
   - Multiple product images
   - Detailed descriptions
   - Size and color selection
-  - Pricing information
+  - Pricing information displayed in rupees (₹) with two decimal places formatting
   - Add to cart functionality
 
 ### Shopping Cart & Checkout
 - Shopping cart with item management (add, remove, update quantities)
 - User authentication via Internet Identity
-- Secure checkout process
+- Secure checkout process with prices displayed in rupees (₹)
 - Stripe payment integration for credit card processing
-- Order confirmation and receipt generation
+- Order confirmation and receipt generation with rupee formatting
 
 ### Order Management
-- Order history for authenticated users
+- Order history for authenticated users with prices in rupees (₹)
 - Order status tracking (processing, shipped, delivered)
 - Estimated delivery times
 - Map-based delivery tracking showing real-time progress
-- Order details and invoice access
+- Order details and invoice access with rupee price formatting
 
 ### Admin Dashboard
 - Product management (add, edit, delete products)
+- Price input fields clearly labeled for rupees (₹) entry
 - Inventory tracking and updates
-- Order management and status updates
-- Sales analytics and reporting
+- Order management and status updates with rupee price display
+- Sales analytics and reporting with rupee formatting
 
 ### Customer Support
 - Contact page with inquiry form
@@ -59,6 +60,13 @@ A luxury e-commerce website for the brand Lumièrè & Vërsē featuring a comple
 - Consistent use of Lumièrè & Vërsē branding
 - Clean typography and sophisticated color scheme
 - English language content throughout
+- Consistent rupee (₹) price formatting across all components
+
+## Price Display Requirements
+- All prices displayed in rupees (₹) with two decimal places (e.g., ₹1999.00)
+- Backend priceCents values divided by 100 for frontend display
+- Admin input fields clearly indicate rupee (₹) entry
+- Consistent formatting across product listings, details, checkout, orders, and admin sections
 
 ## Backend Data Storage
 - Product catalog with images, descriptions, pricing, inventory

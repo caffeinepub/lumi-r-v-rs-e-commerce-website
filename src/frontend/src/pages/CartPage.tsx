@@ -29,7 +29,7 @@ export default function CartPage() {
   }
 
   const formatPrice = (cents: bigint) => {
-    return `$${(Number(cents) / 100).toFixed(2)}`;
+    return `₹${(Number(cents) / 100).toFixed(2)}`;
   };
 
   const convertImageToUrl = (imageBytes: Uint8Array) => {

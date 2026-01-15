@@ -16,10 +16,10 @@ export default function ProductsPage() {
   const [sortBy, setSortBy] = useState<'name' | 'price-asc' | 'price-desc' | 'newest'>('newest');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 100000]);
 
   const formatPrice = (cents: bigint) => {
-    return `$${(Number(cents) / 100).toFixed(2)}`;
+    return `₹${(Number(cents) / 100).toFixed(2)}`;
   };
 
   const convertImageToUrl = (imageBytes: Uint8Array) => {
@@ -120,12 +120,12 @@ export default function ProductsPage() {
 
           <div>
             <Label className="text-base font-semibold mb-2 block">
-              Price Range: ${priceRange[0]} - ${priceRange[1]}
+              Price Range: ₹{priceRange[0]} - ₹{priceRange[1]}
             </Label>
             <Slider
               min={0}
-              max={1000}
-              step={10}
+              max={100000}
+              step={1000}
               value={priceRange}
               onValueChange={(value) => setPriceRange(value as [number, number])}
               className="mt-4"
@@ -138,7 +138,7 @@ export default function ProductsPage() {
             onClick={() => {
               setSearchQuery('');
               setSelectedCategory('all');
-              setPriceRange([0, 1000]);
+              setPriceRange([0, 100000]);
             }}
           >
             Clear Filters

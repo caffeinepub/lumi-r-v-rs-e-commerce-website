@@ -35,7 +35,7 @@ export default function CheckoutPage() {
   }
 
   const formatPrice = (cents: bigint) => {
-    return `$${(Number(cents) / 100).toFixed(2)}`;
+    return `₹${(Number(cents) / 100).toFixed(2)}`;
   };
 
   const handleCheckout = async () => {
@@ -53,7 +53,7 @@ export default function CheckoutPage() {
           productDescription: product.description,
           priceInCents: product.priceCents,
           quantity: item.quantity,
-          currency: 'usd',
+          currency: 'inr',
         };
       });
 

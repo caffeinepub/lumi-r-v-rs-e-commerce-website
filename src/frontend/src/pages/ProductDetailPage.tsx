@@ -27,7 +27,7 @@ export default function ProductDetailPage() {
   const createCart = useCreateCart();
 
   const formatPrice = (cents: bigint) => {
-    return `$${(Number(cents) / 100).toFixed(2)}`;
+    return `₹${(Number(cents) / 100).toFixed(2)}`;
   };
 
   const convertImageToUrl = (imageBytes: Uint8Array) => {

@@ -15,7 +15,7 @@ export default function OrderDetailPage() {
   const { data: allProducts } = useGetAllProducts();
 
   const formatPrice = (cents: bigint) => {
-    return `$${(Number(cents) / 100).toFixed(2)}`;
+    return `₹${(Number(cents) / 100).toFixed(2)}`;
   };
 
   const formatDate = (timestamp: bigint) => {

@@ -78,7 +78,7 @@ export default function AdminPage() {
   }
 
   const formatPrice = (cents: bigint) => {
-    return `$${(Number(cents) / 100).toFixed(2)}`;
+    return `₹${(Number(cents) / 100).toFixed(2)}`;
   };
 
   const formatDate = (timestamp: bigint) => {
@@ -252,15 +252,17 @@ export default function AdminPage() {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="price">Price ($)</Label>
+                    <Label htmlFor="price">Price (₹)</Label>
                     <Input
                       id="price"
                       name="price"
                       type="number"
                       step="0.01"
+                      placeholder="Enter price in rupees"
                       defaultValue={editingProduct ? Number(editingProduct.priceCents) / 100 : ''}
                       required
                     />
+                    <p className="text-xs text-muted-foreground mt-1">Enter the price in rupees (₹)</p>
                   </div>
                   <div className="flex gap-4">
                     <div className="flex items-center space-x-2">
@@ -434,7 +436,7 @@ export default function AdminPage() {
             </div>
             <div>
               <Label htmlFor="countries">Allowed Countries (comma-separated)</Label>
-              <Input id="countries" name="countries" defaultValue="US,CA,GB" required />
+              <Input id="countries" name="countries" defaultValue="IN,US,CA,GB" required />
             </div>
             <Button type="submit" className="w-full">
               Save Configuration

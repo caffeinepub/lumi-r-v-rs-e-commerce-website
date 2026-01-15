@@ -1,7 +1,12 @@
 {
-  "frontend/src/pages/AdminPage.tsx": "Admin dashboard for managing products, orders, contact forms, and Stripe configuration with OrderStatus imported as a value (not type-only) for runtime enum usage.",
-  "frontend/src/pages/CheckoutPage.tsx": "Checkout page that processes cart items, creates orders using OrderStatus enum as a runtime value, and redirects to Stripe payment.",
-  "frontend/src/pages/OrderDetailPage.tsx": "Order detail page displaying order items and delivery tracking information without external map library dependencies.",
+  "frontend/src/pages/AdminPage.tsx": "Admin dashboard for managing products, orders, and contact forms with prices displayed in rupees (₹) and admin input fields clearly labeled for rupee entry.",
+  "frontend/src/pages/CheckoutPage.tsx": "Checkout page with order summary and Stripe payment integration displaying prices in rupees (₹) and using 'inr' currency for Stripe.",
+  "frontend/src/pages/OrderDetailPage.tsx": "Order detail page with item breakdown and delivery tracking displaying prices in rupees (₹).",
   "frontend/src/pages/ContactPage.tsx": "Contact page with form submission and contact information cards displaying email (lumiereverseworld@gmail.com) and phone (9305150125) with clickable links.",
-  "frontend/src/components/Layout.tsx": "Main layout component with header navigation, mobile menu, and footer containing updated contact information (lumiereverseworld@gmail.com and 9305150125) with clickable links."
+  "frontend/src/components/Layout.tsx": "Main layout component with header navigation, mobile menu, and footer containing updated contact information (lumiereverseworld@gmail.com and 9305150125) with clickable links.",
+  "frontend/src/pages/HomePage.tsx": "Home page with hero banner, features section, and featured products grid displaying prices in rupees (₹) with two decimal places.",
+  "frontend/src/pages/ProductsPage.tsx": "Products listing page with filtering, sorting, and search functionality displaying prices in rupees (₹) with price range filter adjusted to 0-100000 rupees.",
+  "frontend/src/pages/ProductDetailPage.tsx": "Product detail page with image gallery, size/color selection, and add to cart functionality displaying prices in rupees (₹).",
+  "frontend/src/pages/CartPage.tsx": "Shopping cart page with item management and quantity controls displaying prices in rupees (₹).",
+  "frontend/src/pages/OrdersPage.tsx": "Orders listing page showing customer order history with prices displayed in rupees (₹)."
 }
