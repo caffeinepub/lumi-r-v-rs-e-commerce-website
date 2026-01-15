@@ -1,5 +1,7 @@
 {
   "frontend/src/pages/AdminPage.tsx": "Admin dashboard for managing products, orders, contact forms, and Stripe configuration with OrderStatus imported as a value (not type-only) for runtime enum usage.",
   "frontend/src/pages/CheckoutPage.tsx": "Checkout page that processes cart items, creates orders using OrderStatus enum as a runtime value, and redirects to Stripe payment.",
-  "frontend/src/pages/OrderDetailPage.tsx": "Order detail page displaying order items and delivery tracking information without external map library dependencies."
+  "frontend/src/pages/OrderDetailPage.tsx": "Order detail page displaying order items and delivery tracking information without external map library dependencies.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with form submission and contact information cards displaying email (lumiereverseworld@gmail.com) and phone (9305150125) with clickable links.",
+  "frontend/src/components/Layout.tsx": "Main layout component with header navigation, mobile menu, and footer containing updated contact information (lumiereverseworld@gmail.com and 9305150125) with clickable links."
 }

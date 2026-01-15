@@ -1,4 +1,4 @@
-# Lumièrè & Vërsē E-commerce Website
+# Lumièrè & Vërsē E commerce Website
 
 ## Overview
 A luxury e-commerce website for the brand Lumièrè & Vërsē featuring a complete shopping experience with product catalog, cart functionality, secure payments, order tracking, and admin management.
@@ -46,7 +46,11 @@ A luxury e-commerce website for the brand Lumièrè & Vërsē featuring a comple
 
 ### Customer Support
 - Contact page with inquiry form
-- Store contact information display
+- Store contact information display including:
+  - Email address: lumiereverseworld@gmail.com
+  - Contact number: 9305150125
+- Contact details prominently displayed near the contact form and in the footer
+- Responsive display ensuring visibility on both desktop and mobile devices
 - Customer service integration
 
 ### Design & Branding

@@ -133,8 +133,12 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">info@lumiere-verse.com</p>
-                    <p className="text-muted-foreground">support@lumiere-verse.com</p>
+                    <a
+                      href="mailto:lumiereverseworld@gmail.com"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      lumiereverseworld@gmail.com
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -146,8 +150,13 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                    <p className="text-sm text-muted-foreground mt-1">Mon-Fri, 9am-6pm EST</p>
+                    <a
+                      href="tel:9305150125"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      9305150125
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-1">Mon-Fri, 9am-6pm</p>
                   </div>
                 </CardContent>
               </Card>

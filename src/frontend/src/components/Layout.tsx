@@ -202,8 +202,21 @@ export default function Layout() {
             </div>
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
-              <p className="text-sm text-muted-foreground">Email: info@lumiere-verse.com</p>
-              <p className="text-sm text-muted-foreground">Phone: +1 (555) 123-4567</p>
+              <p className="text-sm text-muted-foreground mb-1">
+                Email:{' '}
+                <a
+                  href="mailto:lumiereverseworld@gmail.com"
+                  className="hover:text-foreground transition-colors"
+                >
+                  lumiereverseworld@gmail.com
+                </a>
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Phone:{' '}
+                <a href="tel:9305150125" className="hover:text-foreground transition-colors">
+                  9305150125
+                </a>
+              </p>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
